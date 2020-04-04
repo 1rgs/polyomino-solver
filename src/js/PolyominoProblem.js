@@ -4,7 +4,7 @@ import CNFBuilder from './CNFBuilder.js';
 
 export default class PolyominoProblem {
 
-    constructor(pieces, region, allowRotation=true, allowReflection=false) {
+    constructor(pieces, region, allowRotation=false, allowReflection=false) {
         this.pieces = pieces.map(x => x.normalize());
         this.region = region.normalize();
         this.allowRotation = allowRotation;
